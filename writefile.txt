@@ -1,0 +1,13 @@
+def writeFile(flist):
+    if mflag==True:
+        print("in mflag")
+        with open("books.dat","w") as fh:
+            for i in flist:
+                fh.write(i)
+    elif aflag==True:
+        print("in aflag")
+        with open("books.dat","a") as fh:
+            for i in flist[datalen:]:
+                fh.write(i)
+    else:
+        print("doing nothing")
